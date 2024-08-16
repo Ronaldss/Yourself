@@ -1,51 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronald SS - Página Pessoal</title>
+    <style>
+        @font-face {
+            font-family: 'Jersey 10';
+            src: url('https://your-font-url/Jersey10.woff2') format('woff2'), 
+                 url('https://your-font-url/Jersey10.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-  <meta name="author" content="https://github.com/ronaldss">
-	<meta name="description" content="Profissional em TI, apaixonado por informática e Redes de Computadores, meu nome é Ronald Santos. Estamos à disposição! 😉">
-  <meta property="og:image" content="avatar.png">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="shortcut icon" href="avatar.ico" type="imagem/icon">
-  
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
 
-  <title>Ronald Santos</title>
+        header {
+            background-color: #4b0082;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Jersey 10', Arial, sans-serif;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #f8f8ff;
+            border-bottom: 2px solid #4b0082;
+            padding-bottom: 10px;
+        }
+
+        .bio {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .bio img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #f8f8ff;
+            margin-right: 20px;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+        }
+
+        .bio img:hover {
+            transform: scale(1.1) rotate(5deg);
+            border-color: #4b0082;
+        }
+
+        .bio p {
+            margin: 0;
+        }
+
+        .skills, .experience, .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .skills div, .experience div, .projects div {
+            background-color: #4b0082;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4b0082;
+            color: #fff;
+            font-family: 'Jersey 10', Arial, sans-serif;
+        }
+
+        footer a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        footer a:hover {
+            color: #dcdcdc;
+        }
+    </style>
 </head>
+
 <body>
-  <div id="wrapper">
-    <div id="avatar_ronald">div</div>
-    <img src="avatar.jpg" alt="Avatar Ronald Santos">
-    <h1>Ronald Santos</h1>
-    <h2>Tec Informática</h2>
-    <p>
-      Trabalho em TI oficialmente a 9 anos. Atuando em empresa revendedora de sistemas fiscais, tais como: SYSPDV, Digisat G4, G5 e G6, 
-      CompuFour e outros. Também somos familiarizados com sistemas Helpdesk, atendimento presencial ou via acesso remoto, sou responsável 
-      por implantar, treinar e prestar manutenção aos clientes referente aos sistemas e em suas rotinas mensais, ajudando o cliente em tudo que 
-      precisar. 
-    </p>
-   
+    <header>
+        <h1>Ronald SS</h1>
+        <p>Estudante de Programação | Graduado em Redes de Computadores</p>
+    </header>
 
-    <div class="links">
-      <a href="https://www.instagram.com/ronald.dev8/" target="_blank">Instagram</a>
-      <a href="https://github.com/ronaldss" target="_blank">Github</a>
-      <a href="https://twitter.com/RonaldsS19" target="_blank">Twitter</a>
-      <a href="https://www.linkedin.com/in/ronald-santos-4b7238143/" target="_blank">Linkedin</a>
+    <div class="container">
+        <section>
+            <h2>Biografia</h2>
+            <div class="bio">
+                <img src="https://avatars.githubusercontent.com/u/33934560?v=4" alt="Ronald SS">
+                <p>Olá, sou Ronald SS, um estudante dedicado de programação, focado em desenvolver minhas habilidades em HTML, CSS, JavaScript, PHP e Laravel. Graduado em Redes de Computadores, estou constantemente explorando novas tecnologias e maneiras de unir o poder da linguagem Python com a área de redes de computadores. Minha jornada é marcada por uma paixão intensa por tecnologia e uma facilidade notável de entrar em hiperfoco em busca de soluções inovadoras.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div>
+                    <h3>Front-End</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div>
+                    <h3>Back-End</h3>
+                    <p>PHP, Laravel</p>
+                </div>
+                <div>
+                    <h3>Redes de Computadores</h3>
+                    <p>Infraestrutura, Protocolos, Segurança</p>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <p>Trabalho em equipe, Hiperfoco, Paixão por tecnologia</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experiências</h2>
+            <div class="experience">
+                <div>
+                    <h3>Desenvolvimento de App</h3>
+                    <p>Participei do desenvolvimento de um aplicativo para controle de gincanas em Escolas Dominicais.</p>
+                </div>
+                <div>
+                    <h3>ERP e Infraestrutura</h3>
+                    <p>Mais de 10 anos de experiência com sistemas ERPs e infraestrutura de redes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div>
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+                <div>
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contato & Redes Sociais</h2>
+            <p>Email: <a href="mailto:ronald23.nt@gmail.com">ronald23.nt@gmail.com</a></p>
+            <footer>
+                <a href="https://github.com/ronaldss" target="_blank">GitHub</a>
+                <a href="https://twitter.com/ronaldss" target="_blank">Twitter</a>
+                <a href="https://instagram.com/ronaldss" target="_blank">Instagram</a>
+            </footer>
+        </section>
     </div>
-  </div>
-
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Load our React component. -->
-  <script src="avatar_ronald.js"></script>
-
 </body>
+
 </html>
